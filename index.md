@@ -6,7 +6,15 @@ This could be the body of this subsection
 
 So now I will add in a figure
 
+This is Bullets: 
+* first bullet point
+* second bullet point
+* third bullet point
 
+This is an ordered list:
+1. first item in list
+2. second item in list
+  
 
 ![this is alt-text for this figure](https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png)
 
