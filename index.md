@@ -19,7 +19,7 @@ This is an ordered list:
 ![this is alt-text for this figure](https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png)
 
 
-
+![this is alt-text for screenshot figure](https://github.com/mirfanalvi/mirfanalvi.github.io/blob/main/github_screenshot1.png?raw=true)
 
 
 #### Last thing
