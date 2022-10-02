@@ -6,4 +6,4 @@ This could be the body of this subsection
 
 So now I will add in a figure
 
-![this is alt-text for this figure](https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.pngAd)
+![this is alt-text for this figure](https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png)
