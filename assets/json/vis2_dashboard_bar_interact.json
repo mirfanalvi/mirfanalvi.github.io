@@ -1,0 +1,108 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/bfro_reports_fall2022.csv"
+  },
+  "hconcat": [
+    {
+      "height": 300,
+      "width": 600,
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "highlight",
+              "select": {"type": "point", "on": "mouseover"}
+            },
+            {"name": "select", "select": "point"}
+          ],
+          "mark": {"type": "bar", "color": "red", "tooltip": true},
+          "encoding": {
+            "x": {"field": "state", "type": "nominal"},
+            "y": {
+              "aggregate": "max",
+              "field": "temperature_high",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "bar",
+            "color": "green",
+            "opacity": 1,
+            "tooltip": true
+          },
+          "encoding": {
+            "x": {
+              "field": "state",
+              "type": "nominal",
+              "axis": {"title": "State"}
+            },
+            "y": {
+              "aggregate": "mean",
+              "field": "temperature_mid",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "bar",
+            "color": "blue",
+            "opacity": 1,
+            "tooltip": true
+          },
+          "encoding": {
+            "x": {"field": "state", "type": "nominal"},
+            "y": {
+              "aggregate": "min",
+              "field": "temperature_low",
+              "type": "quantitative",
+              "axis": {"title": "Temperature"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "params": [
+        {"name": "highlight", "select": {"type": "point", "on": "mouseover"}},
+        {"name": "select", "select": "point"}
+      ],
+      "mark": {
+        "type": "bar",
+        "fill": "#4C78A8",
+        "stroke": "black",
+        "cursor": "pointer",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "bin": {"maxbins": 15},
+          "field": "visibility",
+          "type": "quantitative",
+          "title": "Visibility Score"
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "axis": {"title": "Frequency"}
+        },
+        "fillOpacity": {
+          "condition": {"param": "select", "value": 1},
+          "value": 0.3
+        },
+        "strokeWidth": {
+          "condition": [
+            {"param": "select", "empty": false, "value": 2},
+            {"param": "highlight", "empty": false, "value": 1}
+          ],
+          "value": 0
+        }
+      },
+      "config": {"scale": {"bandPaddingInner": 0.2}}
+    }
+  ],
+  "config": {}
+}
