@@ -29,6 +29,6 @@ We have our complete visualization work in Starboard which can be accessed using
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/Group_17_Homework_10.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/mirfanalvi/mirfanalvi.github.io/blob/main/python_notebooks/Group_17_Homework_10.ipynb" text="The Analysis" %}
 </div>
 
