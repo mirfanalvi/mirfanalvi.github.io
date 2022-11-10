@@ -17,8 +17,10 @@ custom_js:
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/vis2_dashboard_bar_interact.json" style="width: 100%"></vegachart>
 
+#### Starboard Notebook Homework 10
+We have our complete visualization work in Starboard which can be accessed using link [Homework 10 Starboard Notebook](https://starboard.gg/vaibhavimehta/Assignment10-fork-fork-fork-nDHr9OT)
 
-## Search The Data & Methods
+### Search The Data & Methods
 
 <!-- these are written in a combo of html and liquid --> 
 
@@ -27,6 +29,6 @@ custom_js:
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/Group_17_Homework_10.ipynb" text="The Analysis" %}
 </div>
 
