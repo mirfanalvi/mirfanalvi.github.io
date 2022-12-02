@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://data.cityofnewyork.us/resource/upwt-zvh3.csv"},
+  "hconcat": [
+    {
+      "params": [{"name": "brush", "select": "interval"}],
+      "mark": {"type": "rect", "tooltip": true},
+      "height": 400,
+      "width": 400,
+      "encoding": {
+        "x": {
+          "field": "_2010_2011_performance_grade",
+          "type": "ordinal",
+          "title": "Performance Icon"
+        },
+        "y": {
+          "field": "_2010_2011_environment_grade",
+          "type": "ordinal",
+          "title": "Environment Icon"
+        },
+        "color": {"aggregate": "count", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [{"filter": {"param": "brush"}}],
+      "mark": {"type": "bar", "tooltip": true},
+      "height": 400,
+      "width": 400,
+      "encoding": {
+        "x": {
+          "bin": {"maxbins": 15},
+          "field": "_2010_2011_overall_score",
+          "type": "quantitative",
+          "title": "Overall Score"
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "axis": {"title": "Frequency"}
+        }
+      }
+    }
+  ],
+  "config": {}
+}

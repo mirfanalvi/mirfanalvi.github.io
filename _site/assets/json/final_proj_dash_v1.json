@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://data.cityofchicago.org/resource/9xs2-f89t.csv"},
+  "hconcat": [
+    {
+      "params": [{"name": "brush", "select": "interval"}],
+      "mark": {"type": "rect", "tooltip": true},
+      "height": 400,
+      "width": 300,
+      "encoding": {
+        "x": {
+          "field": "teachers_icon_",
+          "type": "ordinal",
+          "title": "Teachers Icon"
+        },
+        "y": {
+          "field": "environment_icon_",
+          "type": "ordinal",
+          "title": "Environment Icon"
+        },
+        "color": {"aggregate": "count", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [{"filter": {"param": "brush"}}],
+      "mark": {"type": "bar", "tooltip": true},
+      "encoding": {
+        "x": {
+          "bin": {"maxbins": 15},
+          "field": "college_enrollment_number_of_students_",
+          "type": "quantitative",
+          "title": "College Enrollment (No. of students)"
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "axis": {"title": "Frequency"}
+        }
+      }
+    }
+  ],
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://data.cityofchicago.org/resource/9xs2-f89t.csv"},
+  "mark": {"type": "bar", "tooltip": true},
+  "height": 300,
+  "width": 600,
+  "encoding": {
+    "x": {
+      "bin": {"maxbins": 15},
+      "field": "zip_code",
+      "type": "quantitative",
+      "title": "ZIP Code"
+    },
+    "y": {
+      "field": "college_enrollment_number_of_students_",
+      "type": "quantitative",
+      "axis": {"title": "College Enrollment"}
+    }
+  },
+  "config": {}
+}
