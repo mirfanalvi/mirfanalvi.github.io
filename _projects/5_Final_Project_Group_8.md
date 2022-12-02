@@ -92,6 +92,6 @@ We have our complete visualization work in Starboard which can be accessed using
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://starboard.gg/nb/ndZeScg" text="The Analysis" %}
+{% include elements/button.html link="https://starboard.gg/nb/nWxM3xB" text="The Analysis" %}
 </div>
 

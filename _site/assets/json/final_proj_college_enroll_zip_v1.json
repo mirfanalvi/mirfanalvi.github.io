@@ -3,14 +3,9 @@
   "data": {"url": "https://data.cityofchicago.org/resource/9xs2-f89t.csv"},
   "mark": {"type": "bar", "tooltip": true},
   "height": 300,
-  "width": 600,
+  "width": 800,
   "encoding": {
-    "x": {
-      "bin": {"maxbins": 15},
-      "field": "zip_code",
-      "type": "quantitative",
-      "title": "ZIP Code"
-    },
+    "x": {"field": "zip_code", "type": "ordinal", "title": "ZIP Code"},
     "y": {
       "field": "college_enrollment_number_of_students_",
       "type": "quantitative",
