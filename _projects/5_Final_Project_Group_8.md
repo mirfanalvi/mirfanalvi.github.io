@@ -11,12 +11,13 @@ custom_js:
 ---
 
 
-## Final Project Part 3.1 Group 8  Chicago Public School data analysis using Interactive Vega-lite Visualization
+##### Final Project Part 3.1: Chicago Public School data analysis using Interactive Vega-lite Visualization
+###### Group 8 Members: Vaibhavi Mehta (vm19), Youngbeen Oh (yo8), Suhas Chitiki (schiti3), Muhammad Irfan Alvi (mialvi2)
 
-### Environment and Teacher impact on College Enrollments for Chicago Public Schools
+## Environment and Teacher impact on College Enrollments for Chicago Public Schools
 
 
-#### Dataset Description
+##### Dataset Description
 
 The name of our chosen dataset is Chicago Public Schools - Progress Report Cards (2011-2012).
 
@@ -67,11 +68,15 @@ We created the below dashboard for our contextual dataset and we observe that th
 <vegachart schema-url="{{ site.baseurl }}/assets/json/final_proj_contex_dash_v1.json" style="width: 100%"></vegachart>
 
 
+##### NYC Schools Dataset Pie Chart
+
+<img src="/assets/pngs/NY_school_level_pie_v1.png" alt="">
+
 #### Reference links for contextual dataset
 
-2010 - 2011 School Progress Report from NYC https://data.cityofnewyork.us/Education/2010-2011-School-Progress-Report/upwt-zvh3
+2010 - 2011 School Progress Report from NYC 
+https://data.cityofnewyork.us/Education/2010-2011-School-Progress-Report/upwt-zvh3
 
-Chicago Pulbic Schools - Progress Report Cards (2011-2012) https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t
 
 
 #### Starboard Notebook Final Project Part 3.1
