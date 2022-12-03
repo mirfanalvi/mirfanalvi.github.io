@@ -34,7 +34,7 @@ Dataset is 356KB in size. Dataset has 79 columns and 566 rows. This dataset is b
 
 If there is a missing or null value in the columns for specific rows it is represented by 'NDA' which shows No Data Available for the field.
 
-##### Dataset URLs
+##### Dataset Source and Additional Resources
 
 URL: https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t
 
@@ -61,16 +61,28 @@ The below bar plot is a histogram displaying the total number of students enroll
 
 ### Contextual Dataset - 2010 - 2011 School Progress Reports from NYC
 
-In the contextual dataset we selected the Progress Report classified each school from A to F and collected data on the school's learning environment, student performance, and progress. These data are indicators of students and how well the schools are doing for parents' and teachers' understanding. It can be compared to other similar schools. We decided to ignore the year of columns and compare schools around New York with schools around Chicago because this dataset was collected around a similar time as the Chicago dataset, even though it represents achievements from 2010 to 2011. Although not all columns match the Chicago dataset, we designated this dataset as a "contextual dataset" because it classified schools by grade and expressed annual achievement as scores.
+For the contextual dataset we selected the New York City schools Progress Reports for the year 2010-2011. This dataset classifies each school from A to F and collected data on the school's learning environment, student performance, and progress. The data have indicators of students and how well the schools are doing for parents' and teachers' understanding. It can be compared to other similar schools. We decided to ignore the year of columns and compare schools around New York city with schools around Chicago because this dataset was collected around a similar timefram as the Chicago dataset, it represents achievements from 2010 to 2011. Although not all columns match the Chicago dataset, we designated this dataset as a "contextual dataset" because it classified schools by grade and expressed annual achievement as scores which is in the similar context as our Chicago Public schools dataset.
 
 We created the below dashboard for our contextual dataset and we observe that there is a correlation between performance and overall score.
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/final_proj_contex_dash_v1.json" style="width: 100%"></vegachart>
 
+The overall score for a school is the weighted average of school environment, student performance and student progress plus additional credit earned.
+
+Environment score reflect measuring pre-conditions for learning, student attendance and other aspects, such as high expectations, engagement, safety, respect and communication in school.
+
+Performance score is the measure of student performance, which varies based on school type. The letter grades are based on a set grade distribution based on their percentile ranking and denote the average student's performance.
+
+Hence the correlation visible in the graphs makes sense, as school environment and performance score are indeed some of the factors that affect the overall score of the school.
+
+The dashboard is interactive. In the rect map, the darker color indicates higher count of records. Selecting a part from the rect map automatically displays the corresponding histogram for the overall score, thus from the charts one can get a sense of the overall score that occurs most frequently for a selected data subset.
 
 ##### NYC Schools Dataset Pie Chart
 
 <img src="/assets/pngs/NY_school_level_pie_v1.png" alt="">
+
+The above visualization is a pie chart that depicts the number of schools for each school level for our NYC dataset. Each school level is represented by a different color, whose legend is given on the right side of the pie chart. From the chart, it seems that most of the schools in our dataset were elementary schools, followed by high schools.
+This pie chart was created from the tools provided on the cit of new york data website referenced below. 
 
 #### Reference links for contextual dataset
 
@@ -80,7 +92,7 @@ https://data.cityofnewyork.us/Education/2010-2011-School-Progress-Report/upwt-zv
 
 
 #### Starboard Notebook Final Project Part 3.1
-We have our complete visualization work in Starboard which can be accessed using link [Final Project Part 3.1 Starboard Notebook](https://starboard.gg/nb/ndZeScg)
+We have our complete visualization work in Starboard which can be accessed using link [Final Project Part 3.1 Starboard Notebook](https://starboard.gg/nb/nWxM3xB)
 
 
 ### Search The Data & Methods
